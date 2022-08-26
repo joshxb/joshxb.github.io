@@ -6,6 +6,34 @@
 }
 
 body{
-    background-color: brown;
+    background-color: cyan;
+    padding: 20px;
 }
+.header {
+    text-align: center;
+    font-size: 50px;
+}
+.shape {
+    width: 0%;
+    height: 10px;
+    background-color: red;
+  
+    animation-name: shape_move;
+    animation-fill-mode:forwards;
+    animation-duration: 10s;
+    position: relative;
+    bottom : 0;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes shape_move {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+
 
